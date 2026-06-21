@@ -1,7 +1,30 @@
-Read data from LVTOPSUN-512314-G4 LFP Battery via RS232 + NodeJS
+Read data from MaxSky Hybrid MPPT from solar of things for display on Home Assistant
 
 <p float="center">
-<img src="https://github.com/X-c0d3/lvtopsun-battery-monitoring/blob/main/picture/image1.jpg"  width="ุ600">
+<img src="https://github.com/X-c0d3/lvtopsun-battery-monitoring/blob/main/doc/image1.jpg"  width="ุ600">
 <img src="https://github.com/X-c0d3/lvtopsun-battery-monitoring/blob/main/picture/image2.jpg"  width="ุ600">
-<img src="https://github.com/X-c0d3/lvtopsun-battery-monitoring/blob/main/picture/image3.jpg"  width="ุ600">
+
+1. Create .env file
+
+```ruby
+   BASE_URL=https://solar.siseli.com
+
+ACCOUNT=<USERNAME>
+PASSWORD=<PASSWORD>
+
+APP_ID=<APP_ID>
+OPEN_APP_SECRET=<OPEN_APP_SECRET>
+
+DEVICE_ID=<DEVICE_ID>
+TIMEZONE=Asia/Bangkok
+```
+
+https://solar.siseli.com/apis/device/details?deviceId=<DEVICE_ID>
+and find 'stationId' on the response
+<img src="https://github.com/X-c0d3/solar-of-things-hack/blob/main/doc/image1.jpg"  width="ุ600">
+
+APP_ID and OPEN_APP_SECRET you can find on javascript file via ChromDevTools
+open DevTools and search with 'openAppSecret'
+<img src="https://github.com/X-c0d3/solar-of-things-hack/blob/main/doc/image2.jpg"  width="ุ600">
+
 </p>
