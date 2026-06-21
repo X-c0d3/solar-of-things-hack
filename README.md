@@ -1,7 +1,7 @@
 Read data from MaxSky Hybrid MPPT from solar of things for display on Home Assistant
 
 <p float="center">
-<img src="https://github.com/X-c0d3/lvtopsun-battery-monitoring/blob/main/doc/image3.jpg"  width="ุ600">
+<img src="https://github.com/X-c0d3/solar-of-things-hack/blob/main/doc/image3.jpg"  width="ุ600">
 
 1. Create .env file
 
