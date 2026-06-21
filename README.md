@@ -26,7 +26,7 @@ and find 'stationId' on the response
 
 APP_ID and OPEN_APP_SECRET you can find on javascript file via ChromDevTools
 https://solar.siseli.com/umi.0dddcf2d.js (It's random javascript files)
-open DevTools and search with 'openAppSecret'
+open DevTools and search with 'openAppSecret' and copy appId (ze) and openAppSecret (Le) to .env file
 
 <img src="https://github.com/X-c0d3/solar-of-things-hack/blob/main/doc/image2.jpg"  width="ุ600">
 

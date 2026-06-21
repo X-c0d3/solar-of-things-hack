@@ -122,7 +122,7 @@ async function poll() {
     }
 
     console.clear();
-    console.log(`[${new Date().toLocaleTimeString()}] Solar of Things — MSDC-5K48`);
+    console.log(`[${new Date().toLocaleString()}] Solar of Things — MSDC-5K48`);
     console.log('═'.repeat(50));
 
     console.log('☀️  PV');
@@ -161,9 +161,6 @@ async function poll() {
     console.log(
       `   ${V(out.working_mode)}  |  model ${V(out.model)}  sw ${V(out.sw_version)}  |  income today ${V(out.income_today)} / total ${V(out.income_total)}`,
     );
-
-    console.log('═'.repeat(50));
-    console.log(`fields mapped: ${Object.keys(out).length}  |  refresh 3s  |  Ctrl+C to quit`);
   } catch (e: any) {
     console.error('ERR:', e.message);
   }
