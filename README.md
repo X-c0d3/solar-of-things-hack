@@ -1,7 +1,7 @@
 Read data from MaxSky Hybrid MPPT from solar of things for display on Home Assistant
 
 <p float="center">
-<img src="https://github.com/X-c0d3/solar-of-things-hack/blob/main/doc/image3.jpg"  width="ุ600">
+<img src="https://github.com/X-c0d3/solar-of-things-hack/blob/main/picture/image3.jpg"  width="ุ600">
 
 1. Create .env file
 
@@ -22,12 +22,12 @@ after you loged solar.siseli.com you have to get deviceID from URL querystring o
 https://solar.siseli.com/apis/device/details?deviceId=<DEVICE_ID>
 and find 'stationId' on the response
 
-<img src="https://github.com/X-c0d3/solar-of-things-hack/blob/main/doc/image1.jpg"  width="ุ600">
+<img src="https://github.com/X-c0d3/solar-of-things-hack/blob/main/picture/image1.jpg"  width="ุ600">
 
 APP_ID and OPEN_APP_SECRET you can find on javascript file via ChromDevTools
 https://solar.siseli.com/umi.0dddcf2d.js (It's random javascript files)
 open DevTools and search with 'openAppSecret' and copy appId (ze) and openAppSecret (Le) to .env file
 
-<img src="https://github.com/X-c0d3/solar-of-things-hack/blob/main/doc/image2.jpg?v=1"  width="ุ600">
+<img src="https://github.com/X-c0d3/solar-of-things-hack/blob/main/picture/image2.jpg"  width="ุ600">
 
 </p>
