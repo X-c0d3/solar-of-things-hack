@@ -1,0 +1,12 @@
+services:
+  solar-of-things:
+    image: solar-of-things-hack
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: solar-of-things-hack
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: production
