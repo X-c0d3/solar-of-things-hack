@@ -7,7 +7,7 @@
 import fetch from 'node-fetch';
 import dotenv from 'dotenv';
 import mqtt from 'mqtt';
-import { sha256, nonce, hashPassword, decryptSecret, generateSign, toLocalDateTimeTH } from '../util/Utility';
+import { sha256, nonce, hashPassword, decryptSecret, generateSign, toLocalDateTimeTH, dateToLocalDateTimeTH } from '../util/Utility';
 import { MappingData } from '../util/ResponseData';
 dotenv.config();
 
@@ -159,7 +159,7 @@ async function poll() {
     const topic = `${CONFIG.MQTT_TOPIC_BASE}/SOLAR_OF_THINGS/state`;
     console.log(toLocalDateTimeTH(), `Publish to MQTT topic:`, topic);
 
-    out.timestamp = { value: time, unit: '' };
+    out.timestamp = { value: dateToLocalDateTimeTH(time), unit: '' };
     mqttClient.publish(topic, JSON.stringify(out), { qos: 1, retain: true }, (err) => {
       if (err) console.error('Publish error:', err);
     });
