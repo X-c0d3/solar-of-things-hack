@@ -1,10 +1,12 @@
 {
   "dependencies": {
     "@serialport/parser-readline": "^13.0.0",
+    "@types/mqtt": "^2.5.0",
     "dotenv": "^17.4.2",
     "fetch-cookie": "^3.2.0",
     "jsmodbus": "^4.0.10",
     "modbus-serial": "^8.0.23",
+    "mqtt": "^5.15.1",
     "node-fetch": "^3.3.2",
     "nodemon": "^2.0.7",
     "play-dl": "^1.9.7",

@@ -50,6 +50,7 @@ export const MappingData: Record<string, string> = {
     maximumRadiatorTemperature: 'temp_radiator',
     internalTemperature1: 'temp_pv',
     internalTemperature2: 'temp_op',
+    temperatureOfPart2: 'temp_txt',
     temperatureOfPart3: 'temp_env',
     gcellTemperatureAverage: 'temp_cell_avg',
     // ---------- Device ----------

@@ -47,3 +47,29 @@ export function generateSign(headers: Record<string, string>, REAL_SECRET: strin
     return md5(hmac).toLowerCase();
 }
 
+export const toLocalDateTimeTH = () => {
+    const now = new Date();
+    return now.toLocaleString('en-GB', {
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false,
+        timeZone: 'Asia/Bangkok',
+    });
+};
+
+export const dateToLocalDateTimeTH = (date: Date) => {
+    return date.toLocaleString('en-GB', {
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false,
+        timeZone: 'Asia/Bangkok',
+    });
+};
